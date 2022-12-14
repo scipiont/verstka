@@ -214,6 +214,7 @@ transition: opacity 0.2s linear;
 }
 
 .section--devices{
+    margin-bottom: 60px; 
     padding-bottom: 0;
     background: url("../images/devices-bg.jpg")
     center no-repeat;
