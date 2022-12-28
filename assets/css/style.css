@@ -35,7 +35,7 @@ margin: 0 auto;
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background: url("../images/intro5.jpg") center no-repeat;
+    background: url("../images/intro.jpg") center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
 }
@@ -47,7 +47,7 @@ margin: 0 auto;
     text-align: center;
 }
 .intro__title{
-    color: rgb(255, 253, 253);
+    color: rgb(255, 255, 255);
     font-size: 72px;
     font-weight: 700;
     text-transform: uppercase;
@@ -60,7 +60,7 @@ display: block;
 width:  60px;
 height: 3px;
 margin: 60px auto;
-background-color: rgb(14, 13, 13);
+background-color: rgb(255, 255, 255);
 }
 
 .intro__suptitle{
@@ -89,7 +89,7 @@ align-items: center;
 .header__logo{
 font-size: 30px;
 font-weight: 700;
-color:rgb(17, 16, 16);
+color:rgb(255, 255, 255);
 }
 /*.header__logo:hover .move-left{
     transform: translate(-350px,0);
@@ -117,7 +117,7 @@ display: block;
 width: 100%;
 height: 3px;
 /*display: none; /* Делаем полоску всплывающей */
-background-color: #09090a;
+background-color: #0e0ed8;
 /*background-color: #fce38a;*/
 opacity: 0;
 position: absolute;
@@ -129,7 +129,7 @@ transition: opacity 0.2s linear;
 
 .nav__link:hover{
     /*color: #fce38a;*/
-    color: #0a0a0a;
+    color: #0e0ed8;
 }
 /* Делаем полоску всплывающей */
 .nav__link:hover::after,
@@ -137,7 +137,7 @@ transition: opacity 0.2s linear;
     opacity: 1;
 }
 .nav__link.active {
-    color: #2a0acf;
+    color: #f6f5fa;
 }
 
 /* Button */
@@ -183,7 +183,7 @@ transition: opacity 0.2s linear;
     font-size: 18px;
     border-top: 3px solid #fff;
     opacity: 0.7;
-    color:rgb(255, 247, 247);
+    color:rgb(255, 255, 255);
     text-transform: uppercase;
 
 }
@@ -224,6 +224,11 @@ transition: opacity 0.2s linear;
 }
 .section--gray{
     background-color: #f8f8f8; ;
+}
+.section--clients{
+    background: #f5f5f5 url("../images/clients/fon.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 .section__header{
@@ -473,12 +478,13 @@ transition: opacity 0.2s linear;
 
 }
 .reviews__item{
-    padding-left: 205px;
+    padding-left: 255px;
     position: relative;
 }
 
 .reviews__photo{
     border: 2px solid #95e1d3;
+    border-radius: 50%;
     position: absolute;
     top: 0;
     left: 0;
@@ -564,4 +570,101 @@ transition: opacity 0.2s linear;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+/*Works*/
+.works{
+    display: flex;
+}
+.works__col{
+    flex: 1 1 0;
+}
+.works__item{
+    position: relative;
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+}
+.works__item:hover .works__image{
+    opacity: .1;
+}
+.works__item:hover .works__info{
+    opacity: 1;
+}
+
+.works__image{
+    display: block;
+    transition: opacity .2s linear;
+    max-width: 100%;
+    height: auto;
+}
+.works__info{
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transform: translate3d(0,-50%,0);
+    transition: opacity .2s linear;      
+}
+.works__title {
+    margin-bottom: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.works__text{
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+}
+/*Clients*/
+.clients{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+.clients__item{
+    width: 50%;
+    padding: 0 45px 0 175px;
+    position: relative;
+    margin-bottom: 60px;
+}
+.clients__photo{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 0;
+    left: 40px;
+    z-index: 1;
+}
+.clients__name{
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase;
+
+}
+.clients__prof{
+    color: #333;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 300;
+}
+.clients__text{
+    font-size: 15px;
+    color: #999;
+
+}
+.clients__text:before{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 10px 0;
 }
