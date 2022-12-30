@@ -231,7 +231,9 @@ transition: opacity 0.2s linear;
     background-size: cover;
 }
 .section--map{
-    background: #e6e6e6 url("../images/map/map.jpg") center no-repeat / cover;
+    background: #e6e6e6 url("../images/map/map.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
     padding: 40px 0;
 }
 
@@ -778,4 +780,17 @@ transition: opacity 0.2s linear;
     padding-top: 65px;
     background-color: #f8f8f8;
 
+}
+.footer__logo{
+    margin-bottom: 30px;
+    font-size: 46px;
+    font-weight: 700;
+    color:#ccc;
+
+}
+
+.footer__text{
+    margin-bottom: 30px;
+    font-size: 15px;
+    color:#999;
 }
