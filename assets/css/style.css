@@ -112,6 +112,7 @@ align-items: center;
 font-size: 30px;
 font-weight: 700;
 color:rgb(255, 255, 255);
+cursor: pointer;
 }
 /*.header__logo:hover .move-left{
     transform: translate(-350px,0);
@@ -175,6 +176,9 @@ transition: opacity 0.2s linear;
     top: 24px;
     right: 24px;
     z-index: 1;
+}
+.nav__toggle:focus{
+    outline: 0;
 }
 .nav-toggle__item{
     display: block;
@@ -492,12 +496,14 @@ transition: opacity 0.2s linear;
     max-width: 600px;
     margin: 0 auto;
     position: relative;
-    /* overflow: hidden; */
+    /* overflow: hidden;  */
 }
 .devices__item{
     display: block;
     max-width: 100%;
-    height: auto;
+    height: auto; 
+    margin: 40px;
+  
 }
 .devices__item--iphone{
     position: absolute;
@@ -586,12 +592,16 @@ transition: opacity 0.2s linear;
 }
 /*Reviews*/
 .reviews{
-    padding: 0 110px;
+    /* padding: 0 110px; */
     position: relative;
 
 }
+.reviews .slick-slider {
+    padding: 0 110px;
+}
 .reviews__item{
     padding-left: 255px;
+    min-height: 210px; 
     position: relative;
 }
 
@@ -628,16 +638,25 @@ transition: opacity 0.2s linear;
     margin-right: 10px;
     background-color: #f38181;
 }
-.reviews__btn{
+/* .reviews__btn */
+.slick-arrow {
+    display: block;
     font-size: 0;
     color: transparent;
+    border: 0;
+    background: none;
+    cursor: pointer;
     position: absolute;
     top: 50%;
     z-index: 1;
     transform: translateY(-50%);
 
 }
-.reviews__btn:after{
+.slick-arrow:focus{
+    outline: 0;
+}
+/* .reviews__btn,*/ 
+.slick-arrow:after{
     content:"";
     display: block;
     width: 16px;
@@ -647,11 +666,13 @@ transition: opacity 0.2s linear;
 
     
 }
-.reviews__btn--prev{
+/* .reviews__btn--prev */
+.slick-prev{
     left: 0;
     transform: rotate(-45deg);
 }
-.reviews__btn--next{
+/* .reviews__btn--next  */
+.slick-next{
     right: 0;
     transform: rotate(135deg);
 }
@@ -1129,7 +1150,7 @@ transition: opacity 0.2s linear;
         border-bottom: 0;
     }
     /*Reviews*/
-    .reviews{
+    .reviews .slick-slider{
         padding: 0 60px;
     }
     .reviews__photo{
@@ -1185,6 +1206,9 @@ transition: opacity 0.2s linear;
         top: 100%;
         left: 0;
         background-color: #eb8b8d;
+    }
+    .nav.active{
+        display: block;
     }
     .nav__link{
         display: block;
@@ -1329,14 +1353,17 @@ transition: opacity 0.2s linear;
     }
     .devices__item--iphone{
        width: 180px; 
-       bottom: -50px;
-       right: -80px;
+       bottom: -80px;
+       right: -110px;
     }
     /*Reviews*/
-    .reviews{
+    .reviews .slick-slider{
         padding: 0;
     }
-    .reviews__btn{
+    /* .reviews__btn{
+        top: 18%;
+    } */
+    .slick-arrow{
         top: 18%;
     }
     /*Logos*/
