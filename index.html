@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Интернет-магазин по продаже меда. Продаем горный мёд с пасеки в Алтайском крае. Купить горный мёд">
+    <meta name="keywords" content="Горный мед,Мёд,продажа секционного мёда,заказы на покупку пчелопродуктов,продажа меда,купить горный мёд, купить, мёд, Алтай">
+    <meta name="google" content="notranslate">
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
@@ -15,7 +18,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="shortcut icon" href="favicon.ico"/>
+    <!-- <link rel="shortcut icon" href="favicon.ico"/> -->
+    <link type="image/x-icon" href="/favicon.ico" rel="shortcut icon">
     <title>Горный мёд</title>
     <style>
 
@@ -28,8 +32,39 @@
 			border-radius:  12px;
 			font-size: 18px; */
 			cursor: pointer;
+            border: none;
+            background: transparent;
 
 		} 
+        /* .search__but{
+            cursor: pointer;
+            border: none;
+            background: transparent;
+            
+            z-index: 2;
+        }
+        .srch{
+            width: 100px;
+          
+            box-sizing: border-box;
+            box-shadow: 0 0 10px 0 #000;
+            border: none;
+            
+            opacity: 0;
+            appearance: none;
+            transition-duration: 0.5s;
+            transition-property: opacity;
+            z-index: -1;
+
+        } */
+        
+        /* .srch--active{
+
+                opacity: 1;
+                z-index: 2;
+                
+          
+        } */
 		 .wrapper{
 			 /* margin: 10px;  */
 			/* display: flex; */
@@ -46,7 +81,8 @@
 		}
 		  .frm{
             margin-top: 125px;
-            background-color: #d99e51;
+            /* background-color: #d99e51; */
+            background-color: #eb8b8d; 
 			color: #31386e;
 			display: flex;
 			flex-direction: column;
@@ -126,9 +162,17 @@
                             <i class="fas fa-shopping-cart pop_btn"></i>
                     </a> -->
 
-                    <a class="nav__link" href="#">
+                    <!-- <a class="nav__link" href="#">
                             <i class="fas fa-search"></i>
-                    </a>
+                    </a> -->
+                    
+                        <!-- <input class="srch" type="text" name="search" placeholder="Поиск...">
+                   
+                        <button class="search__but" type="submit">
+                            <i class="fas fa-search"></i>
+                            
+                        </button> -->
+                  
 
                 </nav>
                 <button class="nav-toggle" id="nav_toggle" type="button">
@@ -177,19 +221,19 @@
                 <div class="slider__inner">
                     <div class="slider__item active">
                     <span class="slider__num">01</span>
-                    <span class="slider__text">Начало</span>
+                    <span class="slider__text" data-scroll="#intro">Начало</span>
                     </div> 
                     <div class="slider__item">
                     <span class="slider__num">02</span>
-                    <span class="slider__text">Отзывы</span>
+                    <span class="slider__text" data-scroll="#works">Отзывы</span>
                     </div> 
                     <div class="slider__item">
                     <span class="slider__num">03</span>
-                    <span class="slider__text">О нас</span>
+                    <span class="slider__text" data-scroll="#about">О нас</span>
                     </div> 
                     <div class="slider__item">
                     <span class="slider__num">04</span>
-                    <span class="slider__text">Контакты</span>
+                    <span class="slider__text" data-scroll="#footer">Контакты</span>
                     </div> 
                 </div>
             </div>
@@ -214,7 +258,7 @@
                 <div class="card__item">
                     <div class="card__inner">
                         <div class="card__img">
-                            <img src="assets/images/about/b1.jpg" alt="">
+                            <img src="assets/images/about/b1.jpg" alt="Пчёлы">
                         </div>
                         <div class="card__text"><!--Горное пчеловодство--></div>
                     </div>
@@ -223,7 +267,7 @@
                 <div class="card__item">
                     <div class="card__inner">
                         <div class="card__img">
-                            <img src="assets/images/about/b2.jpg" alt="">
+                            <img src="assets/images/about/b2.jpg" alt="Работа с ульем">
                         </div>
                         <div class="card__text"><!--Горное пчеловодство--></div>
                     </div>
@@ -232,7 +276,7 @@
                 <div class="card__item">
                     <div class="card__inner">
                         <div class="card__img">
-                            <img src="assets/images/about/man.jpg" alt="">
+                            <img src="assets/images/about/man.jpg" alt="Работа с магазинкой">
                         </div>
                         <div class="card__text"><!--Горное пчеловодство--></div>
                     </div>
@@ -346,9 +390,9 @@
                     <h2 class="section__title">В любую точку России за наш счёт</h2>
                 </div>
                 <div class="devices">
-                    <img class="devices__item" src="assets/images/ipad.png" alt="">
+                    <img class="devices__item" src="assets/images/ipad.png" alt="Почта">
                     <img class="devices__item devices__item--iphone" 
-                    src="assets/images/iphone.png" alt="">
+                    src="assets/images/iphone.png" alt="Перевозки самолетом">
                 </div>
             </div>
     </section>
@@ -369,7 +413,7 @@
                     <!--<img src="http://placehold.it/570x380" alt=""  Сервис для 
                         временного занятия места на сайте. Замена будущих блоков.
                     --> 
-                    <img class="wedo__img" src="assets/images/tr.jpg" alt="">
+                    <img class="wedo__img" src="assets/images/tr.jpg" alt="Доставка оптом">
                 </div>
                  <div class="wedo__item">
                         <div class="accordion">
@@ -380,7 +424,7 @@
                                 </div>
                                 <div class="accordion__content" id="wedo_1">
                                     <p>
-                                        Доставка транспортными компаниями "Деловые линии".
+                                        Доставка транспортными компаниями "Деловые линии". Через г. Бийск.
                                         Самый быстрый и надежный способ получить товар. Получение на
                                         складе Деловых линий или можете оформить доставку курьером.
                                     </p>
@@ -393,9 +437,8 @@
                                 </div>
                                 <div class="accordion__content" id="wedo_2">
                                     <p>
-                                        Доставка транспортными компаниями "Деловые линии".
-                                        Самый быстрый и надежный способ получить товар. Получение на
-                                        складе Деловых линий или можете оформить доставку курьером.
+                                        Доставка транспортной компанией "СДЭК".
+                                        Осуществляется через Белокуриху, местное отеделние СДЭК.
                                     </p>
                                 </div>
                             </div>
@@ -406,9 +449,9 @@
                                 </div>
                                 <div class="accordion__content" id="wedo_3">
                                     <p>
-                                        Доставка транспортными компаниями "Деловые линии".
-                                        Самый быстрый и надежный способ получить товар. Получение на
-                                        складе Деловых линий или можете оформить доставку курьером.
+                                        Доставка Почтой России, наложенным платежом или после оплаты онлайн. 
+                                        Можно использовать быструю доставку Экспресс-отправление EMS(Она будет чуть дороже), но до 31 килограмма мёда.
+                                        Более 31 килограмма отправляем транспортными компаниями. 
                                     </p>
                                 </div>
                             </div>
@@ -427,7 +470,7 @@
             <div data-slider>
                 <div>
                     <div class="reviews__item">
-                        <img class="reviews__photo" src="assets\images\otz\otz.png" alt="">
+                        <img class="reviews__photo" src="assets\images\otz\otz.png" alt="Отзыв">
                         <div class="reviews__text">
                         "Очень хороший вкусный мёд. Не первый раз берем мёд у пасечников из Солонешенского района Алтайского края.
                             Спасибо пасечникам за ваш труд."
@@ -437,7 +480,7 @@
                 </div>
                 <div>
                     <div class="reviews__item">
-                        <img class="reviews__photo" src="assets\images\otz\otz.png" alt="">
+                        <img class="reviews__photo" src="assets\images\otz\otz.png" alt="Отзыв">
                         <div class="reviews__text">
                         "Покупали пергу и забрус, помимо мёда. Отменный подукт у пасечников из Юртного."
                         </div>
@@ -464,7 +507,7 @@
                 <div class="card__item">
                     <div class="card__inner">
                             <div class="card__img">
-                                <img src="assets/images/vid/11.jpg" alt=""> <!--Ширина 380 Высота 470-->
+                                <img src="assets/images/vid/11.jpg" alt="село Юртное"> <!--Ширина 380 Высота 470-->
                             </div>
                             <div class="card__text">
                                 <div class="social">
@@ -492,7 +535,7 @@
                 <div class="card__item">
                     <div class="card__inner">
                             <div class="card__img">
-                                <img src="assets/images/vid/12.jpg" alt="">
+                                <img src="assets/images/vid/12.jpg" alt="село Солонешное">
                             </div>
                             <div class="card__text">
                                 <div class="social">
@@ -520,7 +563,7 @@
                 <div class="card__item">
                     <div class="card__inner">
                             <div class="card__img">
-                                <img src="assets/images/vid/13.jpg" alt="">
+                                <img src="assets/images/vid/13.jpg" alt="село Солонешное">
                             </div>
                             <div class="card__text">
                                 <div class="social">
@@ -553,22 +596,22 @@
     <div class="container">
             <div class="logos">
                  <div class="logos__item">
-                    <img class="logos__img" src="assets/images/vid/1.jpg" alt="">
+                    <img class="logos__img" src="assets/images/vid/1.jpg" alt="Маточное молочко">
                  </div>
                  <div class="logos__item">
-                    <img class="logos__img" src="assets/images/vid/2.jpg" alt="">
+                    <img class="logos__img" src="assets/images/vid/2.jpg" alt="Цветочная пыльца">
                  </div>
                  <div class="logos__item">
-                    <img class="logos__img" src="assets/images/vid/3.jpg" alt="">
+                    <img class="logos__img" src="assets/images/vid/3.jpg" alt="Перга">
                  </div>
                  <div class="logos__item">
-                    <img class="logos__img" src="assets/images/vid/4.jpg" alt="">
+                    <img class="logos__img" src="assets/images/vid/4.jpg" alt="Пчелиный воск">
                  </div>
                  <div class="logos__item">
-                    <img class="logos__img" src="assets/images/vid/5.jpg" alt="">
+                    <img class="logos__img" src="assets/images/vid/5.jpg" alt="Забрус">
                  </div>
                  <div class="logos__item">
-                    <img class="logos__img" src="assets/images/vid/6.jpg" alt="">
+                    <img class="logos__img" src="assets/images/vid/6.jpg" alt="Прополис">
                  </div>
             </div>
 
@@ -598,14 +641,14 @@
     <div class="works">
         <div class="works__col">
             <div class="works__item">
-                <img class="works__image" src="assets/images/works/1.jpg" alt="">
+                <img class="works__image" src="assets/images/works/1.jpg" alt="Пасека">
                 <div class="works__info">
                     <div class="works__title">Работа</div>
                     <div class="works__text">Улья</div>
                 </div>
             </div>
             <div class="works__item">
-                <img class="works__image" src="assets/images/works/2.jpg" alt="">
+                <img class="works__image" src="assets/images/works/2.jpg" alt="Докорм пчел полномедными рамками">
                 <div class="works__info">
                     <div class="works__title">Работа</div>
                     <div class="works__text">Изъятие рамок</div>
@@ -614,14 +657,14 @@
         </div>
         <div class="works__col">
             <div class="works__item">
-                <img class="works__image" src="assets/images/works/3.jpg" alt="">
+                <img class="works__image" src="assets/images/works/3.jpg" alt="Пасека на горе">
                 <div class="works__info">
                     <div class="works__title">Работа</div>
                     <div class="works__text">Улья</div>
                 </div>
             </div>
             <div class="works__item">
-                <img class="works__image" src="assets/images/works/4.jpg" alt="">
+                <img class="works__image" src="assets/images/works/4.jpg" alt="Пасека">
                 <div class="works__info">
                     <div class="works__title">Работа</div>
                     <div class="works__text">Борьба с трутневыми засевами</div>
@@ -631,7 +674,7 @@
     
         <div class="works__col">
             <div class="works__item">
-                <img class="works__image" src="assets/images/works/5.jpg" alt="">
+                <img class="works__image" src="assets/images/works/5.jpg" alt="Дымарь">
                 <div class="works__info">
                     <div class="works__title">Работа</div>
                     <div class="works__text">Дымарь</div>
@@ -640,14 +683,14 @@
         </div>
         <div class="works__col">
             <div class="works__item">
-                <img class="works__image" src="assets/images/works/6.jpg" alt="">
+                <img class="works__image" src="assets/images/works/6.jpg" alt="Пасека в горах">
                 <div class="works__info">
                     <div class="works__title">Работа</div>
                     <div class="works__text">Пасека</div>
                 </div>
             </div>
             <div class="works__item">
-                <img class="works__image" src="assets/images/works/7.jpg" alt="">
+                <img class="works__image" src="assets/images/works/7.jpg" alt="Полный улик">
                 <div class="works__info">
                     <div class="works__title">Работа</div>
                     <div class="works__text">Полный улик</div>
@@ -665,7 +708,7 @@
             <div data-slider>
                 <div>
                     <div class="reviews__item">
-                        <img class="reviews__photo" src="assets\images\avatar.png" alt="">
+                        <img class="reviews__photo" src="assets\images\avatar.png" alt="Аватарка">
                         <div class="reviews__text">
                         "Мёд собирается в местах цветения краснокнижных растений. Очень качественный продукт.
                         Майский мёд преимущественно с акации. Настоящий горный мёд."
@@ -675,7 +718,7 @@
                 </div>
                 <div>
                     <div class="reviews__item">
-                        <img class="reviews__photo" src="assets\images\avatar.png" alt="">
+                        <img class="reviews__photo" src="assets\images\avatar.png" alt="Аватарка">
                         <div class="reviews__text">
                         "Брали 16 килограммов мёда в сезоне 2022. Очень довольны."
                         </div>
@@ -696,7 +739,7 @@
         </div>    
         <div class="clients">
             <div class="clients__item">
-                <img class="clients__photo" src="assets\images\clients\1.png" alt="">
+                <img class="clients__photo" src="assets\images\clients\1.png" alt="Портрет клиента">
                 <div class="clients__content">
                     <div class="clients__name">Дмитрий Ребров</div>
                     <div class="clients__prof">Директор производства</div>
@@ -704,7 +747,7 @@
                 </div>
             </div>
             <div class="clients__item">
-                <img class="clients__photo" src="assets\images\clients\2.png" alt="">
+                <img class="clients__photo" src="assets\images\clients\2.png" alt="Портрет клиента">
                 <div class="clients__content">
                     <div class="clients__name">Александр Гришин</div>
                     <div class="clients__prof">Менеджер</div>
@@ -712,7 +755,7 @@
                 </div>
             </div>
             <div class="clients__item">
-                <img class="clients__photo" src="assets\images\clients\3.png" alt="">
+                <img class="clients__photo" src="assets\images\clients\3.png" alt="Портрет клиента">
                 <div class="clients__content">
                     <div class="clients__name">Николай Иванов</div>
                     <div class="clients__prof">Фотограф-документалист</div>
@@ -720,7 +763,7 @@
                 </div>
             </div>
             <div class="clients__item">
-                <img class="clients__photo" src="assets\images\clients\4.png" alt="">
+                <img class="clients__photo" src="assets\images\clients\4.png" alt="Портрет клиента">
                 <div class="clients__content">
                     <div class="clients__name">Алексей Вескер</div>
                     <div class="clients__prof">Повар</div>
@@ -742,7 +785,7 @@
             <div class="blog__item">
                 <div class="blog__header">
                      <a href="#">
-                            <img  class="blog__photo" src="assets/images/blog/1.jpg" alt="">
+                            <img  class="blog__photo" src="assets/images/blog/1.jpg" alt="Пчелы">
                      </a>
                     <div class="blog__date">
                         <div class="blog__date-day">15</div>Июля
@@ -769,7 +812,7 @@
             <div class="blog__item">
                 <div class="blog__header">
                      <a href="#">
-                            <img  class="blog__photo" src="assets/images/blog/3.jpg" alt="">
+                            <img  class="blog__photo" src="assets/images/blog/3.jpg" alt="Поиск матки">
                      </a>
                     <div class="blog__date">
                         <div class="blog__date-day">21</div>Августа
@@ -795,7 +838,7 @@
             <div class="blog__item">
                 <div class="blog__header">
                      <a href="#">
-                            <img  class="blog__photo" src="assets/images/blog/2.jpg" alt="">
+                            <img  class="blog__photo" src="assets/images/blog/2.jpg" alt="Работа с ульем">
                      </a>
                     <div class="blog__date">
                         <div class="blog__date-day">13</div>Сентября
@@ -879,21 +922,21 @@
                         <div class="footer__title">Блоги</div>
                         <div class="blogs">
                             <div class="blogs__item">
-                                <img class="blogs__img" src="assets/images/blog/1.jpg" alt="">
+                                <img class="blogs__img" src="assets/images/blog/1.jpg" alt="Пчелы">
                                   <div class="blogs__content">
                                     <a class="blogs__title" href="#">Очистка вощин, подготовка к весне.</a>
                                     <div class="blogs__date">Январь, 2018</div>
                                   </div>
                             </div>
                             <div class="blogs__item">
-                                <img class="blogs__img" src="assets/images/blog/2.jpg" alt="">
+                                <img class="blogs__img" src="assets/images/blog/2.jpg" alt="Работа с пчелами">
                                   <div class="blogs__content">
                                     <a class="blogs__title" href="#">Лечение и очистка ульев от подмора.</a>
                                     <div class="blogs__date">Март, 2018</div>
                                   </div>
                             </div>
                             <div class="blogs__item">
-                                <img class="blogs__img" src="assets/images/blog/3.jpg" alt="">
+                                <img class="blogs__img" src="assets/images/blog/3.jpg" alt="Поиск матки">
                                   <div class="blogs__content">
                                     <a class="blogs__title" href="#">Борьба с трутнями.</a>
                                     <div class="blogs__date">Май, 2018</div>
@@ -905,31 +948,31 @@
                         <div class="footer__title">Инстаграм</div>
                         <div class="instagram">
                            <a class="instagram__item" href="#" target="_blank">
-                                <img src="assets/images/instagram/1.jpg" alt="">
+                                <img src="assets/images/instagram/1.jpg" alt="Вощина">
                            </a>
                            <a class="instagram__item" href="#" target="_blank">
-                                <img src="assets/images/instagram/2.jpg" alt="">
+                                <img src="assets/images/instagram/2.jpg" alt="Полурамка">
                            </a>
                            <a class="instagram__item" href="#" target="_blank">
-                                <img src="assets/images/instagram/3.jpg" alt="">
+                                <img src="assets/images/instagram/3.jpg" alt="Пчела">
                            </a>
                            <a class="instagram__item" href="#" target="_blank">
-                                <img src="assets/images/instagram/4.jpg" alt="">
+                                <img src="assets/images/instagram/4.jpg" alt="Пасека">
                             </a>
                              <a class="instagram__item" href="#" target="_blank">
-                                <img src="assets/images/instagram/5.jpg" alt="">
+                                <img src="assets/images/instagram/5.jpg" alt="Пчелки">
                             </a>
                              <a class="instagram__item" href="#" target="_blank">
-                                <img src="assets/images/instagram/6.jpg" alt="">
+                                <img src="assets/images/instagram/6.jpg" alt="У входа у улей">
                             </a>
                              <a class="instagram__item" href="#" target="_blank">
-                                <img src="assets/images/instagram/7.jpg" alt="">
+                                <img src="assets/images/instagram/7.jpg" alt="Рамки">
                             </a>
                             <a class="instagram__item" href="#" target="_blank">
-                                <img src="assets/images/instagram/8.jpg" alt="">
+                                <img src="assets/images/instagram/8.jpg" alt="Вощина">
                             </a>
                             <a class="instagram__item" href="#" target="_blank">
-                                <img src="assets/images/instagram/9.jpg" alt="">
+                                <img src="assets/images/instagram/9.jpg" alt="Вощина с пчелами">
                             </a>
                 
                         </div>
@@ -958,6 +1001,8 @@
 		});
 	});
 </script>
+<script src="script.js"></script>
+
 <!-- <script src="/mail/js/mail.js"></script> -->
 </body>
 </html> 

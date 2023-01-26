@@ -41,6 +41,14 @@
         $("#nav").toggleClass("active");
     
     });
+        // Silder text
+        $(".slider__item").on("click",function(event) {
+            event.preventDefault();
+            $(this).toggleClass("active");
+            $("#slider__item").toggleClass("active");
+        
+        });
+
             /*Collapse*/
         $("[data-collapse]").on("click", function(event) {
             event.preventDefault();

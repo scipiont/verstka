@@ -111,7 +111,7 @@ align-items: center;
 .header__logo{
 font-size: 30px;
 font-weight: 700;
-color:rgb(255, 255, 255);
+color:rgb(0, 0, 0);
 cursor: pointer;
 }
 /*.header__logo:hover .move-left{
@@ -259,6 +259,7 @@ transition: opacity 0.2s linear;
 .slider__inner{
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
     /*margin-top: 30px; */
 }
 .slider__item{
@@ -270,6 +271,7 @@ transition: opacity 0.2s linear;
     opacity: 0.7;
     color:rgb(255, 255, 255);
     text-transform: uppercase;
+    cursor: pointer;
 
 }
 .slider__item.active{
@@ -290,6 +292,11 @@ transition: opacity 0.2s linear;
 .slider__num{
     font-size: 24px;
     font-weight: 700;
+}
+.slider__text{
+    /* display: block; */
+    
+    cursor: pointer;
 }
 
 /* Section */
