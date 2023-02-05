@@ -1,3 +1,6 @@
 RewriteEngine on
 RewriteCond %{HTTP:X-Forwarded-Proto} !https
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^xn--80afd4abehb6o.xn--p1ai
+RewriteRule (.*) http://www.xn--80afd4abehb6o.xn--p1ai/$1 [R=301,L]
